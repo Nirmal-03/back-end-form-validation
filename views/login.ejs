@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style2.css">
+</head>
+<body>
+    <a href="/signup">SIGNUP</a>
+    <form action="/login-data" method="post">
+        <h1>LOGIN</h1>
+        <label for="mail">E-mail:</label>
+        <input type="email" name="mail" required>
+        <label for="pass">password:</label>
+        <input type="text" name="pass" required>
+        <p><%= locals.message?message:"login your account"; %></p>
+        <input type="submit" id="btn">
+    </form>
+</body>
+</html>
